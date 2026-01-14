@@ -24,7 +24,7 @@ import TaskDetailsDialog from "@/components/TaskDetailsDialog";
 
 interface Props {
   tasks: DerivedTask[];
-  onAdd: (payload: Omit<Task, "id" | "createdAt" | "completedAt">) => void;
+  onAdd: (payload: Omit<Task, "id">) => void;
   onUpdate: (id: string, patch: Partial<Task>) => void;
   onDelete: (id: string) => void;
 }
